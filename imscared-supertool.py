@@ -26,8 +26,8 @@ def download(url):
 print"=====IMSCARED (2016) Supertool=====\n\nWritten by Parzival Wolfram in Python 2\n\nI wish people still put their heart and soul into their programs...\nI miss the DOS days. And I wasn't even alive yet at that time!"
 time.sleep(3.5)
 print"\n\nAlright, enough dicking around! Let's get to it!\n\n"
-restartFlag = False
 global restartFlag
+restartFlag = False
 def begin():
     if restartFlag:
         ""
@@ -84,7 +84,7 @@ def begin():
     elif userInput == 3:
         print"Alright, let's do it! Erasing saved data..."
         batchOut=open("temp.bat","w")
-        batchOut.write("@echo off\ncd %%APPDATA%%\\IMSCARED\ntaskkill /im imscared.exe /f\ndel white.ini /f\ndel workshop.ini /f\n\n\nexit")
+        batchOut.write("@echo off\ncd %APPDATA%\\IMSCARED\ntaskkill /im imscared.exe /f\ndel white.ini /f\ndel workshop.ini /f\n\n\nexit")
         batchOut.flush()
         batchOut.close()
         os.system("call temp.bat")
@@ -94,12 +94,12 @@ def begin():
         restart()
     elif userInput == 4:
         print"Alright, let's do it! Patching..."
-        axfilOut=open("temp.axfil","w")
+        axfilOut=open("temp.@@@","w")
         axfilOut.write("[revolver]\nbullets=\"6.000000\"")
         axfilOut.flush()
         axfilOut.close()
         batchOut=open("temp.bat","w")
-        batchOut.write("@echo off\ntaskkill /im IMSCARED.exe /f\ndel %%APPDATA%%\\IMSCARED\\revolver.ini /f\ncopy temp.axfil %%APPDATA%%\\IMSCARED\\revolver.ini\nattrib %%APPDATA%%\\IMSCARED\\revolver.ini +r\ndel temp.axfil\ndel temp.bat")
+        batchOut.write("@echo off\ntaskkill /im IMSCARED.exe /f\ndel %APPDATA%\\IMSCARED\\revolver.ini /f\ncopy temp.@@@ %APPDATA%\\IMSCARED\\revolver.ini /y\nattrib %APPDATA%\\IMSCARED\\revolver.ini +r\ndel temp.@@@\ndel temp.bat")
         batchOut.flush()
         batchOut.close()
         os.system("call temp.bat")
