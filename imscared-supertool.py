@@ -99,7 +99,7 @@ def begin():
         axfilOut.flush()
         axfilOut.close()
         batchOut=open("temp.bat","w")
-        batchOut.write("@echo off\ntaskkill /im IMSCARED.exe /f\ndel %APPDATA%\\IMSCARED\\revolver.ini /f\ncopy temp.@@@ %APPDATA%\\IMSCARED\\revolver.ini /y\nattrib %APPDATA%\\IMSCARED\\revolver.ini +r\ndel temp.@@@\ndel temp.bat")
+        batchOut.write("@echo off\ntaskkill /im IMSCARED.exe /f\nattrib %APPDATA%\\IMSCARED\\revolver.ini -r\ndel %APPDATA%\\IMSCARED\\revolver.ini /f\ncopy temp.@@@ %APPDATA%\\IMSCARED\\revolver.ini /y\nattrib %APPDATA%\\IMSCARED\\revolver.ini +r\ndel temp.@@@\ndel temp.bat")
         batchOut.flush()
         batchOut.close()
         os.system("call temp.bat")
