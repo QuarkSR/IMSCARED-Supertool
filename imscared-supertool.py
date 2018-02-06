@@ -64,16 +64,16 @@ def begin():
     elif userInput == 2:
         print"Alright, let's do it! Setting clock to first ticket's time..."
         os.system("time 7:45:00 AM")
-        print"Set! Next ticket time will be set in 5 seconds..."
-        time.sleep(5)
+        print"Set! Next ticket time will be set in 10 seconds..."
+        time.sleep(10)
         print"Setting to second ticket time..."
         os.system("time 8:23:00 PM")
-        print"Set! Next ticket time will be set in 5 seconds..."
-        time.sleep(5)
+        print"Set! Next ticket time will be set in 10 seconds..."
+        time.sleep(10)
         print"Setting to metro ticket time..."
         os.system("time 12:00:00 AM")
-        print"Set! Time will be restored from the Internet in 5 seconds..."
-        time.sleep(5)
+        print"Set! Time will be restored from the Internet in 10 seconds..."
+        time.sleep(10)
         from urllib2 import urlopen
         res = urlopen('http://just-the-time.appspot.com/')
         time_str = res.read().strip()
