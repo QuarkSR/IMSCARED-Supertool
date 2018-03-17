@@ -1,0 +1,74 @@
+First and foremost: SAVE STRUCTURE!
+
+So far, "white.ini" shows the following structure (Section and variable order shifts frequently):
+(All numbers are expresssed as 6-decimal integers for some reason.)
+
+[gotyou]
+slowly - This variables appears (and is immediately set to 1) when the fake close occurs after using the Pulsating Heart the first time.
+This section disappears from the INI after the White Face segment is over.
+
+[Language]
+lang - equals 1 if English is set, otherwise French is set.
+
+[imscared]
+myheartinyourhands - Set to 1 when the game is ready to be cleared by deleting heart.txt.
+mprcsflwr - Set to 2 when first attacked by White Face in the B&W section. Set to 3 after the second attack. Set to 4 after the third attack. Set to 6 after the attack after trying to commit suicide. 
+pipClear - Door raised?
+valveA - Valve A set?
+valveB - Valve B set?
+valveC - Valve C set?
+unseen - You Shouldn't Be Here achievement.
+mEnded - Store segment complete.
+energy - Set to 1 after cutting power. Set to 0 after power comes back on.
+getcutter - Set to 1 after geting cutter from outside trash.
+openoffice - Set to 1 after opening office.
+officekey - Set to 1 after getting the Office Key.
+cutter - Set to 1 after throwing away cutter.
+mail - Set to 1 when dropping off Letter.
+getletter - Set to 1 when grabbing the Letter outside.
+freezekey - Set to 1 when getting the freezer key.
+openfreeze - Set to 1 if freezer is open.
+setletter - Set to 1 if you put the letter under the door.
+hended - Killed HER...?
+hend - HEnded achievement.
+revo - No idea. Set to 1 after killing HER.
+ticket - Set to 1 if you have the Metro Ticket.
+luckytwo - No idea. Set to 1 after spawning the train.
+sub - No idea. Set to 2 after spawning the train.
+luckyonce - No idea. Set to 1 after spawning the train.
+luckyTicks - Lucky Tickets achievement.
+lab - Gramophone layout...?
+keepcontact - Thanks for staying achievement.
+buryHer - Set to 1 after resuming after mat exit/after dropping down into the hedge maze.
+mircode - Mirror code. Mine was index 4 and my mirror string was "Hatred Bond", so my code was "15204".
+peektwice - Peek-a-TWO Achievement.
+end - Set to 1 after the White Face segment ends.
+ended - Set to 1 after the White Face segment ends.
+wallsecret - Heaven's Door achievement.
+tag - Master Tag achievement.
+bs - No clue. Set to 1 (and added if not in the INI yet) after picking up the Pulsating Heart.
+labClear - If 1, gramophone segment is done. Cleared after killing HER...?
+subClear - No idea.
+key - Various values on what you've picked something up.
+roomNext - Room index. Valid values TBD.
+peekone - Peek-a-Boo achievement.
+
+[exists]
+yes - No clue.
+
+[loneliness]
+sub - No idea. Always 0. Setting to 1 does nothing.
+bas - No idea. Always 0. Setting to 1 does nothing.
+goodbye - No idea. Always 1. Setting to 0 restarts the game from the tutorial.
+
+"workshop.ini":
+
+Created after the tutorial. Existence determines whether tutorial has been done.
+[newme]
+ws - Set to 1 when you start the HER segment. Set to 0 after dropping into the hedge maze.
+
+[exists]
+yes - No clue.
+
+[imscared]
+roomNext - Room index for the HER segment of the game. Spawns after the second startup in this section or after the mat exit.
