@@ -61,7 +61,9 @@ sub - No idea. Always 0. Setting to 1 does nothing.
 bas - No idea. Always 0. Setting to 1 does nothing.
 goodbye - No idea. Always 1. Setting to 0 restarts the game from the tutorial.
 
-"workshop.ini":
+
+Workshop.ini's structure:
+
 
 Created after the tutorial. Existence determines whether tutorial has been done.
 [newme]
